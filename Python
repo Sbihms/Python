@@ -1,0 +1,74 @@
+Python is an interpreted (scripting) language, not compiled.
+ - C# is compiled, think .exe files, binary. The compiler turns it into binary. Fast.
+ - Interpreted language does not. It turns into machine code on the fly. It does use up more computer resources.
+ - Interp. languages are good for websites since the compiling happens once it lands on a device.
+
+Python looks at white space to end the line.
+- easy to figure out what line of code belongs to each statement
+
+Determines the kind of variable based on what data you input. You dont have to define it!
+
+  Ex/
+  >>> var1 = 100
+  It automatically knows its an integer
+  >>> var2 = "hello world"
+  Knows its a string
+  >>> var3 = 3.14
+  knows its a floating point
+
+  You could write:
+
+  >>> var4 = var1 + var3
+  >>> print var4
+  103.4
+
+We need to output to the screen
+  print "xyz"
+  print variable
+
+How do we get data from the user?
+  >>> raw_input ()
+
+  '\n'
+  >>> var6 = raw_input("gimme data")
+  gimme data!555
+  >>> print var6
+  555
+  >>>
+
+Examples of simple programs.
+
+Simple addition:
+
+  print "Let's find the sum of two numbers!" #welcome for this program
+  firstValue = raw_input("Type a number and press enter: ") #gets user input for first number to add to second value
+  secondValue = raw_input("Type another number and press enter: ") #Gets user input for second number
+  print "Your total is", int(firstValue) + int(secondValue) # adds the two values together, placing "int" outside the parenthesis confirms that the value should be an integer. You don't technically need it. Why a comma? It concatenates the rest of the statement to the first string and tells it to put in a space.
+  raw_input("Press enter to exit") #keeps window open until user presses enter
+
+Example of concatenation
+  >>> var1 = "hello"
+  >>> var2 = "world"
+  >>> print var, var2
+  hello world
+
+Example using words:
+
+print "tell me where you live"
+state = raw_input("which state do you live in? ") #Gets a string input from the user
+city = raw_input("which city do you live in? ") #gets another string input
+print "you live in", city + ", " + state #combines our strings and prints the to the screen
+raw_input("press enter to exit") #keeps window open until user presses enter
+
+Comment as much as you can so if someone else needs to pick up where you left off.
+  However, you can't comment a huge block of code; you have to put a #on each line
+
+Homework: write a program that combines integers and strings
+
+print "What is your birthday" #program that combines integers and strings
+Month = raw_input("what is your birth month? ") #user inputs string
+type(Month)
+Year = raw_input("What year were you born? ") #user inputs integer
+type(Year)
+print "you were born on", Month + ", " + Year #combines integer and string
+raw_input("press enter to exit") #keeps window open until user presses enter
