@@ -1,0 +1,50 @@
+First exercise - "printing" statements.
+
+Note - save python in .py file extension.
+
+To run a python program from terminal, type: python programfilename.py
+
+Here is the short program (written in BBEdit) 
+
+print "Hello World!"
+print "Hello Again"
+print "I like typing this."
+print "This is fun"
+print 'Yay! Printing.'
+print "I'd much rather you 'not'."
+print 'I "said" do not touch this.'
+
+Terminal Commands/output:
+
+Sarahs-MacBook-Air:Python sarah$ python ex1.py
+Hello World!
+Hello Again
+I like typing this.
+This is fun
+Yay! Printing.
+I'd much rather you 'not'.
+I "said" do not touch this.
+
+
+
+
+STUDY DRILL
+
+# - I think this is like a comment - place it at the beginning of a line and it won't print.
+
+#print "Hello World!"
+print "Hello Again"
+#print "I like typing this."
+#print "This is fun"
+#print 'Yay! Printing.'
+#print "I'd much rather you 'not'."
+#print 'I "said" do not touch this.'
+
+Terminal
+
+Sarahs-MacBook-Air:Python sarah$ python ex1.py
+Hello Again
+Sarahs-MacBook-Air:Python sarah$ 
+
+
+
