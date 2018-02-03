@@ -1,0 +1,38 @@
+Learning how to run Python, create a directory for my Python exercises, and creating a test txt file.
+
+
+Sarahs-MacBook-Air:~ sarah$ python
+Python 2.7.10 (default, Jul 15 2017, 17:16:57) 
+[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+[1]+  Stopped                 python
+Sarahs-MacBook-Air:~ sarah$ 
+Sarahs-MacBook-Air:~ sarah$ pwd
+/Users/sarah
+Sarahs-MacBook-Air:~ sarah$ touch Python
+Sarahs-MacBook-Air:~ sarah$ ls
+Amazon Drive Dropbox Public
+Applications Library Python
+Desktop Movies arp
+Documents Music iCloud Drive (Archive)
+Downloads Pictures temp
+Sarahs-MacBook-Air:~ sarah$ cd pyth
+-bash: cd: pyth: No such file or directory
+Sarahs-MacBook-Air:~ sarah$ cd python
+-bash: cd: python: Not a directory
+Sarahs-MacBook-Air:~ sarah$ cd Python
+-bash: cd: Python: Not a directory
+Sarahs-MacBook-Air:~ sarah$ mkdir Python
+mkdir: Python: File exists
+Sarahs-MacBook-Air:~ sarah$ cd Python
+-bash: cd: Python: Not a directory
+Sarahs-MacBook-Air:~ sarah$ mkdir Python
+Sarahs-MacBook-Air:~ sarah$ cd Python
+Sarahs-MacBook-Air:Python sarah$ touch test.txt
+
+
+
+
+
+
