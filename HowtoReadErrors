@@ -1,0 +1,14 @@
+If you have an error, it will look like this:
+$ python ex/ex1.py
+File "ex/ex1.py", line 3
+print "I like typing this.
+^
+SyntaxError: EOL while scanning string literal
+
+It’s important that you can read these, since you will be making many of these mistakes. Even I make many of these mistakes. Let’s look at this line by line.
+
+1. Here we ran our command in the Terminal to run the ex1.py script.
+2. Python then tells us that the fi le ex1.py has an error on line 3.
+3. It then prints this line for us.
+4. Then it puts a ^ (caret) character to point at where the problem is. Notice the missing "(double- quote) character?
+5. Finally, it prints out a SyntaxError and tells us something about what might be the error. Usually these are very cryptic, but if you copy that text into a search engine, you will find someone else who’s had that error and you can probably figure out how to fi x it.
