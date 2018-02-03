@@ -1,0 +1,138 @@
+Program written in python
+
+# prints the beginning statement. Nothing fancy.
+print "I will now count my chickens:"
+
+# Calculates the number of hens. Follows PEMDAS order (parenthesis, exponent, multiplication, division, addition, subtraction)
+print "Hens", 25 + 30 / 6
+
+# Calculates the number of roosters. 100 - (25*3%4) = 100 - (75 divided by 4 is 18.75 --> 18 * 4 is 72 (leaving 3 remaining from the 75)
+print "Roosters", 100 - 25 * 3 % 4
+
+# prints the second statement
+print "Now I will count the eggs:"
+
+# order of operations: PEMDAS order of ops - 1/4 and 4%2 are calculated first. Python v. 2 truncates fractions so 1/4 = 0.25 = 0 in python. 4%2 = 4/2 = 2 --> 2*2 = 4 --> 4-4=0
+print 3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6
+
+# 3+2 is 5 and 5-7 is -2. It is NOT true that 5 is less than -2.
+print "Is it true that 3 + 2 < 5 - 7?"
+
+#This statement shows that the statement above is false.
+print 3 + 2 < 5 - 7
+
+# this prints the question and then calculates the answer
+print "What is 3 + 2?", 3 + 2
+
+# again, this prints the statement and then calculates the answer
+print "What is 5 - 7?", 5 - 7
+
+# statement
+print "Oh, that's why it's false."
+
+#statement
+print "How about some more."
+
+#question followed by the operation. Once python calculates this it will state true or false.
+print "Is it greater?", 5 > -2
+
+# question followed by a calculation. Python will print either true or false.
+print "Is it greater or equal?", 5 >= -2
+
+#question followed by a calculation which python will tell us is either true or false.
+print "Is it less or equal?", 5 <= -2
+
+
+Program running in terminal
+
+Kryptobunny:Python sarah$ python ex3.py
+I will now count my chickens:
+Hens 30
+Roosters 97
+Now I will count the eggs:
+7
+Is it true that 3 + 2 < 5 - 7?
+False
+What is 3 + 2? 5
+What is 5 - 7? -2
+Oh, that's why it's false.
+How about some more.
+Is it greater? True
+Is it greater or equal? True
+Is it less or equal? False
+
+
+
+Using Python as a calculator 
+
+Kryptobunny:Python sarah$ python
+Python 2.7.10 (default, Jul 15 2017, 17:16:57) 
+[GCC 4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.31)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 7.0 / 4.0
+1.75
+>>> 7/4
+1
+>>> 12+1
+13
+>>> 12+1-1
+12
+>>> 12-1+1
+12
+>>> 
+
+I discovered that python includes numbers after a decimal as long as you input the decimal initially. See 7.0 / 4.0 and 7/4 above.
+
+Also, python reads left to right if the order of operations includes only addition and subtraction. So 12-1+1 = 12 (rather than 10, if you do the addition first). 
+
+
+Rewriting the initial exercise with floating points included:
+
+print "I will now count my chickens:"
+
+print "Hens", 25.0 + 30.0 / 6.0
+
+print "Roosters", 100.0 - 25.0 * 3.0 % 4.0
+
+print "Now I will count the eggs:"
+
+print 3 + 2 + 1 - 5 + 4.0 % 2.0 - 1 / 4 + 6
+
+print "Is it true that 3 + 2 < 5 - 7?"
+
+print 3 + 2 < 5 - 7
+
+print "What is 3 + 2?", 3 + 2
+
+print "What is 5 - 7?", 5 - 7
+
+print "Oh, that's why it's false."
+
+print "How about some more."
+
+print "Is it greater?", 5 > -2
+
+print "Is it greater or equal?", 5 >= -2
+
+print "Is it less or equal?", 5 <= -2
+
+
+Script Running 
+
+Kryptobunny:Python sarah$ python ex3.py
+I will now count my chickens:
+Hens 30.0
+Roosters 97.0
+Now I will count the eggs:
+7.0
+Is it true that 3 + 2 < 5 - 7?
+False
+What is 3 + 2? 5
+What is 5 - 7? -2
+Oh, that's why it's false.
+How about some more.
+Is it greater? True
+Is it greater or equal? True
+Is it less or equal? False
+
+
