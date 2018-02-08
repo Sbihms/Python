@@ -1,0 +1,104 @@
+Python Code:
+
+cars = 100
+space_in_a_car = 4.0
+drivers = 30
+passengers = 90
+cars_not_driven = cars - drivers
+cars_driven = drivers
+carpool_capacity = cars_driven * space_in_a_car
+average_passengers_per_car = passengers / cars_driven
+
+print "There are", cars, "cars available."
+print "There are only", drivers, "drivers available."
+print "There will be", cars_not_driven, "empty cars today."
+print "We can transport", carpool_capacity, "people today."
+print "We have", passengers, "to carpool today."
+print "We need to put about", average_passengers_per_car, "in each car."
+
+Program output:
+
+Kryptobunny:Python sarah$ python ex4.py
+There are 100 cars available.
+There are only 30 drivers available.
+There will be 70 empty cars today.
+We can transport 120.0 people today.
+We have 90 to carpool today.
+We need to put about 3 in each car.
+
+
+Study Drills
+
+1. I used 4.0 for space_in_a_car, but is that necessary? What happens if it’s just 4?
+
+Nothing happens - the output is still 120 but without the .0
+
+2. Remember that 4.0 is a “floating point” number. Find out what that means.
+
+A floating point number is any number with a decimal. 
+
+3. Write comments above each of the variable assignments.
+
+#variable for the number of cars total.
+cars = 100
+#variable showing how many seats are available in each car.
+space_in_a_car = 4
+#variable for the number of drivers.
+drivers = 30
+#variable for the amount of passengers. who need a ride.
+passengers = 90
+#variable which calculates the number of cars that won't be driven due to lack of drivers
+cars_not_driven = cars - drivers
+#variable for the number of cars which will be driven. This is equal to the number of drivers.
+cars_driven = drivers
+#variable which calculates how many people can fit in all the cars. 
+carpool_capacity = cars_driven * space_in_a_car
+#variable which calculates how many people will ride in each car - passengers divided by cars driven.
+average_passengers_per_car = passengers / cars_driven
+
+# shows how many total cars are available.
+print "There are", cars, "cars available."
+
+#shows how many total drivers are available.
+print "There are only", drivers, "drivers available."
+
+# This calculates the amount of cars that won't have drivers.
+print "There will be", cars_not_driven, "empty cars today."
+
+#Carpool capacity is calculated by multiplying the number of cars driven by 4 (how many people can fit in each car)
+print "We can transport", carpool_capacity, "people today."
+
+#This shows how many passengers need a ride today.
+print "We have", passengers, "to carpool today."
+
+#Calculates the average number of passengers per car. Passengers divided by the number of cars driven.
+print "We need to put about", average_passengers_per_car, "in each car."
+
+4. Make sure you know what = is called (equals) and that it’s making names for things.
+
+Right - you are assigning a value to an statement.
+
+6. Try running Python as a calculator like you did before and use variable names to do your calculations. Popular variable names are also i, x, and j.
+
+Python Code
+
+i = 5
+j = 10
+k = 1
+
+#NOTE : PUT A SPACE BEFORE AND AFTER OPERATORS - BAD FORM TO PUT THEM TOGETHER
+print i-j
+print k-i
+print j * k
+print i * j
+print j/i
+
+Program Output
+
+Kryptobunny:Python sarah$ python ex4a.py
+-5
+-4
+10
+50
+2
+
