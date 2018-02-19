@@ -1,0 +1,73 @@
+Just practice typing and printing.
+
+print "Mary had a little lamb."
+print "It's fleece was white as %s." % 'snow'
+print "And everywhere that Mary went."
+print "." * 10 # what did that do? It printed the . 10 times
+
+end1 = "C"
+end2 = "h"
+end3 = "e"
+end4 = "e"
+end5 = "s"
+end6 = "e"
+end7 = "B"
+end8 = "u"
+end9 = "r"
+end10 = "g"
+end11 = "e"
+end12 = "r"
+
+# watch that comma at the end. try removing it to see what happens. When I removed the comma it printed the two lines separately rather than together. See below. 
+print end1 + end2 + end3 + end4 + end5 + end6,
+print end7 + end8 + end9 + end10 + end11 + end12
+
+
+
+Program output:
+
+Kryptobunny:Python sarah$ python ex7.py
+Mary had a little lamb.
+It's fleece was white as snow.
+And everywhere that Mary went.
+..........
+Cheese Burger
+
+
+Program output after removing the comma in the highlighted section above
+
+Kryptobunny:Python sarahbihms$ python ex7.py
+Mary had a little lamb.
+It's fleece was white as snow.
+And everywhere that Mary went.
+..........
+Cheese
+Burger
+
+
+
+Adding a comment to each line
+
+
+print "Mary had a little lamb." # prints the statement
+print "It's fleece was white as %s." % 'snow' # print's the statement which refers to the string snow.
+print "And everywhere that Mary went." # prints a statement
+print "." * 10 # what did that do? # prints the period 10 times
+
+end1 = "C" # simply a variable named end1 which references a single letter
+end2 = "h" # a variable which prints a letter
+end3 = "e" # a variable which print a letter
+end4 = "e" # a variable which prints a letter
+end5 = "s" # a variable which prints a letter
+end6 = "e" # a variable which prints a letter
+end7 = "B" # a variable which prints a letter
+end8 = "u" # a variable which prints a letter
+end9 = "r" # a variable which prints a letter
+end10 = "g" # a variable which prints a letter
+end11 = "e" # a variable which prints a letter
+end12 = "r" # a variable which prints a letter
+
+# watch that comma at the end. try removing it to see what happens
+print end1 + end2 + end3 + end4 + end5 + end6, # prints the letters assigned to each variable. The comma acts as a "space" and then the following statement prints.
+print end7 + end8 + end9 + end10 + end11 + end12 # Rather than printing on a new line, this statement is printed directly next to the one above because of the comma. 
+
