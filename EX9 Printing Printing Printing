@@ -1,0 +1,37 @@
+Code
+
+
+# Here's some new strange stuff, remember type it exactly.
+
+days = "Mon Tue Wed Thu Fri Sat Sun" # assigns these strings to the variable day
+months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug" # assigns the strings to the variable month. I believe the \n tells the string to print on a new line.
+
+print "Here are the days: ", days # prints the strings assignment to the variable days
+print "Here are the months: ", months # prints the strings assigned to the variable months.
+
+print """
+There's something going on here.
+With the three double-quotes.
+We'll be able to type as much as we like.
+Even 4 lines if we want, or 5, or 6.
+""" # using 3 quotes allows you to print multiple lines without having to write "print" in front of each one.
+
+
+Program output:
+
+Kryptobunny:Python sarah$ python ex9.py
+Here are the days:  Mon Tue Wed Thu Fri Sat Sun
+Here are the months:  Jan
+Feb
+Mar
+Apr
+May
+Jun
+Jul
+Aug
+
+There's something going on here.
+With the three double-quotes.
+We'll be able to type as much as we like.
+Even 4 lines if we want, or 5, or 6.
+
