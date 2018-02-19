@@ -1,0 +1,25 @@
+Code
+
+formatter = "%r %r %r %r" # assigns the value of %r reference to the variable titled "formatter"
+
+print formatter % (1, 2, 3, 4) # prints the variable titled formatter which references these numers. They print out in order with no punctuation.
+print formatter % ("one", "two", "three", "four") # prints the formatter variable which references these strings. Because we used %r and not %s they show up with quotes around them.
+print formatter % (True, False, False, True) # prints the formatter variable which references true and false.
+print formatter % (formatter, formatter, formatter, formatter) # prints the formatter variable which references itself so it prints %r four times.
+print formatter % (
+    "I had this thing.",
+    "That you could type up right.",
+    "But it didn't sing.",
+    "So I said goodnight."
+) # prints the variable formatter which references the four strings in quotation marks. They all print on the same line since they are separated with commas. 
+
+
+Program output
+
+Kryptobunny:Python sarah$ python ex8.py
+1 2 3 4
+'one' 'two' 'three' 'four'
+True False False True
+'%r %r %r %r' '%r %r %r %r' '%r %r %r %r' '%r %r %r %r'
+'I had this thing.' 'That you could type up right.' "But it didn't sing." 'So I said goodnight.'
+
