@@ -1,0 +1,94 @@
+Different ways to express and write strings in code.
+
+Code:
+
+x = "There are %d types of people." % 10
+binary = "binary"
+do_not = "don't"
+y = "Those who know %s and those who %s." % (binary, do_not)
+
+print x
+print y
+
+print "I said: %r." % x
+print "I also said: '%s'." % y
+
+hilarious = False
+joke_evaluation = "Isn't that joke so funny?! %r"
+
+print joke_evaluation % hilarious
+
+w = "This is the left side of..."
+e = "a string with a right side."
+
+print w + e 
+
+
+Program output:
+
+Kryptobunny:Python sarah$ python ex6.py
+There are 10 types of people.
+Those who know binary and those who don't.
+I said: 'There are 10 types of people.'.
+I also said: 'Those who know binary and those who don't.'.
+Isn't that joke so funny?! False
+This is the left side of...a string with a right side.
+
+
+1. Go through this program and write a comment above each line explaining it.
+
+
+x = "There are %d types of people." % 10 # defines variable x as a string that references a digit.
+binary = "binary" # binary is a variable defined as binary
+do_not = "don't" # defines the variable do_not as don't
+y = "Those who know %s and those who %s." % (binary, do_not) # defines the variable y as a string that references two other strings
+
+print x # prints the x string
+print y # prints the y string
+
+print "I said: %r." % x # prints the x variable within a string.
+print "I also said: '%s'." % y # prints the y variable within a string
+
+hilarious = False # gives the variable "hilarios" a value of False
+joke_evaluation = "Isn't that joke so funny?! %r" # defines the variable joke_evaluation as a string that references another string
+
+print joke_evaluation % hilarious # prints both variables
+
+w = "This is the left side of..." # defines the variable w as a string
+e = "a string with a right side." # defines the variable e as a string
+
+print w + e  # prints variable w and e on the same line.
+
+
+2. Find all the places where a string is put inside a string. There are four places.
+
+x = "There are %d types of people." % 10 # defines variable x as a string that references a digit.
+binary = "binary" # binary is a variable defined as binary
+do_not = "don't" # defines the variable do_not as don't
+y = "Those who know %s and those who %s." % (binary, do_not) # defines the variable y as a string that references two other strings
+
+print x # prints the x string
+print y # prints the y string
+
+print "I said: %r." % x # prints the x variable within a string.
+print "I also said: '%s'." % y # prints the y variable within a string
+
+hilarious = False # gives the variable "hilarious" a value of False
+joke_evaluation = "Isn't that joke so funny?! %r" # defines the variable joke_evaluation as a string that references another string
+
+print joke_evaluation % hilarious # prints both variables
+
+w = "This is the left side of..." # defines the variable w as a string
+e = "a string with a right side." # defines the variable e as a string
+
+print w + e  # prints variable w and e on the same line.
+
+
+3. Are you sure there are only four places? How do you know? Maybe I like lying.
+
+Yes, unless you consider a digit a string. In that case there is one additional string within a string.
+
+4. Explain why adding the two strings w and e with + makes a longer string.
+
+You are telling the program to add the two strings together rather than having them print separately.
+
