@@ -1,0 +1,60 @@
+Code
+
+print "How old are you?",
+age = raw_input()
+print "How tall are you?",
+height = raw_input()
+print "How much do you weigh?",
+weight = raw_input()
+
+print "So, you're %r old, %r tall, and %r heavy." % (age, height, weight)
+
+Program output:
+
+Kryptobunny:~ sarah$ cd Python
+Kryptobunny:Python sarah$ python ex11.py
+How old are you? 33
+How tall are you? 5'1
+How much do you weigh? 135
+So, you're '33' old, "5'1" tall, and '135' heavy.
+
+
+
+Study Drills
+1. Go online and find out what Python’s raw_input does.
+
+Raw_input takes the input and prints it without identifying if it is a string, numerical value, etc. 
+
+Input by itself tries to give a value to what you type in. Example:
+
+RAW_INPUT
+
+first = raw_input("enter first number: ")
+second = raw_input("enter second number: ")
+print first + second
+
+If you enter 2 as the numbers it prints: 22
+
+INPUT
+
+first = input("enter first number: ")
+second = input("enter second number: ")
+print first + second
+
+If you enter 2 as the numbers it adds them and gives you 4.
+
+
+2. Write another “form” like this to ask some other questions.
+
+ROCKSTAR NAME GENERATOR!
+
+print "Welcome to the rock star name generator!"
+print "What was your first pet's name?"
+pet = raw_input()
+print "What is the name of the street you grew up on?"
+street = raw_input()
+print "What was your highschool mascot?"
+mascot = raw_input()
+
+print "Your rock star name is %s %s %s!" % (pet, street, mascot)
+
